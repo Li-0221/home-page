@@ -20,6 +20,9 @@ onMounted(() => {
     locale.value = language;
   }
 });
+
+
+// TODO 手机屏幕就提示 平板或电脑显示更好
 </script>
 
 <style lang="scss">

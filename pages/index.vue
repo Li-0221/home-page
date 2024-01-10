@@ -13,7 +13,7 @@
       </div>
     </div>
 
-    <div class="grid-container">
+    <div class="grid-container hidden sm:block">
       <div class="grid">
         <div class="gridLayer">
           <div class="gridBlock"></div>
