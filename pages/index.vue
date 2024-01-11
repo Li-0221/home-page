@@ -176,7 +176,10 @@ const a1 = () => {
   bigImg.addEventListener("load", function () {
     gsap.to(".centerPiece .gridBlock", { autoAlpha: 1, duration: 0.5 });
   });
-  bigImg.src = '/assets/home/vue.png'
+  const url = new URL('/assets/home/vue.png', import.meta.url).href
+  console.log(url);
+
+  bigImg.src = url
 };
 
 const a2 = () => {
