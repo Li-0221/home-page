@@ -2,12 +2,11 @@
   <div class="">
     <div class="hero min-h-screen">
       <div class="hero-content text-center">
-        <div class="max-w-md gs_reveal">
-          <h1 class="text-5xl font-bold">Hello there</h1>
-          <p class="py-6 ">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
+        <div class="max-w-xl gs_reveal">
+          <h1 class="text-5xl font-bold">嗨，你好！</h1>
+          <p class="py-6">
+            这里是Li，一个会写一些后端的前端开发者，目前在成都，欢迎来到我的个人网站。
+            你可以在这里找到我的一些作品，以及一些技术分享。下面是我的一些信息。请向下滑动。
           </p>
         </div>
       </div>
@@ -16,33 +15,34 @@
     <div class="grid-container hidden sm:block">
       <div class="grid">
         <div class="gridLayer">
-          <div class="gridBlock"></div>
+          <div class="gridBlock bg-[url('/assets/home/electron.png')]"></div>
         </div>
         <div class="gridLayer">
-          <div class="gridBlock"></div>
+          <div class="gridBlock bg-[url('/assets/home/nest.png')]"></div>
         </div>
         <div class="gridLayer">
-          <div class="gridBlock"></div>
+          <div class="gridBlock bg-[url('/assets/home/ts.png')]"></div>
         </div>
         <div class="gridLayer centerPiece">
-          <div class="gridBlock centerBlock"></div>
+          <div class="gridBlock centerBlock bg-[url('/assets/home/vue.png')]">
+          </div>
         </div>
         <div class="gridLayer">
-          <div class="gridBlock">
+          <div class="gridBlock bg-[url('/assets/home/vite.png')]"></div>
+        </div>
+        <div class="gridLayer">
+          <div class="gridBlock bg-[url('/assets/home/tailwind.png')]">
             <a href="https://greensock.com" target="_blank"></a>
           </div>
         </div>
         <div class="gridLayer">
-          <div class="gridBlock"></div>
+          <div class="gridBlock bg-[url('/assets/home/openlayer.png')]"></div>
         </div>
         <div class="gridLayer">
-          <div class="gridBlock"></div>
+          <div class="gridBlock bg-[url('/assets/home/gsap.png')]"></div>
         </div>
         <div class="gridLayer">
-          <div class="gridBlock"></div>
-        </div>
-        <div class="gridLayer">
-          <div class="gridBlock"></div>
+          <div class="gridBlock  bg-[url('/assets/home/nuxt.png')]"></div>
         </div>
       </div>
     </div>
@@ -150,10 +150,6 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-// definePageMeta({
-//   layout: false
-// });
-
 gsap.registerPlugin(ScrollTrigger);
 
 const a1 = () => {
@@ -175,19 +171,11 @@ const a1 = () => {
       ease: "none"
     });
 
-  // Images to make it look better, not related to the effect
-  const size = Math.max(innerWidth, innerHeight);
-  gsap.set(".gridBlock", {
-    backgroundImage: (i) =>
-      `url(https://picsum.photos/${size}/${size}?random=${i})`
-  });
-
   const bigImg = new Image();
   bigImg.addEventListener("load", function () {
     gsap.to(".centerPiece .gridBlock", { autoAlpha: 1, duration: 0.5 });
   });
-
-  bigImg.src = `https://picsum.photos/${size}/${size}?random=50`;
+  bigImg.src = '/assets/home/vue.png'
 };
 
 const a2 = () => {
@@ -255,29 +243,32 @@ onMounted(() => {
   width: 100vw;
   height: 400vh;
   position: relative;
-}
 
-.grid {
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 70vw;
-  height: 60vw;
-  margin: 0 calc(100vw / 20 * 3);
-  position: absolute;
-}
-
-@media only screen and (max-width: 580px) {
   .grid {
-    margin: 0;
-    width: 100vw;
-    height: 89.444vw;
+    top: 30px;
+    left: 0;
+    z-index: 1;
+    width: 70vw;
+    height: 60vw;
+    margin: 0 calc(100vw / 20 * 3);
+    position: absolute;
+  }
+
+  @media only screen and (max-width: 580px) {
+    .grid {
+      margin: 0;
+      width: 100vw;
+      height: 89.444vw;
+    }
   }
 }
 
+
+
+
 .gridBlock {
   background-size: cover;
-  background-color: darkgray;
+  background-color: transparent;
 }
 
 .gridLayer {
@@ -307,7 +298,7 @@ onMounted(() => {
 }
 
 .gridLayer:nth-child(2) .gridBlock {
-  top: 0;
+  top: 6vh;
   left: 32.5vw;
   width: 15vw;
   height: 15vw;

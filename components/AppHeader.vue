@@ -1,5 +1,5 @@
 <template>
-  <header class="navbar bg-base-100">
+  <header class="navbar bg-base-100 rounded-none">
     <div class="navbar-start">
       <div class="dropdown">
         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -9,32 +9,20 @@
         </div>
         <!-- TODO 这里和菜单一起修改 小屏幕状态菜单-->
         <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-          <li><a>个人文档</a></li>
-          <li>
-            <a>Parent</a>
-            <ul class="p-2">
-              <li><a>Submenu 1</a></li>
-              <li><a>Submenu 2</a></li>
-            </ul>
-          </li>
-          <li><a>Item 3</a></li>
+          <li><a href="/">首页</a></li>
+          <li><a>文档</a></li>
+          <li><a>技术支持</a></li>
+          <li><a>联系我</a></li>
         </ul>
       </div>
-      <a class="btn btn-ghost text-xl" href="/">个人信息册</a>
+      <a class="btn btn-ghost text-xl" href="/">Li</a>
     </div>
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal px-1">
-        <li><a>我的文档</a></li>
-        <li>
-          <details>
-            <summary>Parent</summary>
-            <ul class="p-2">
-              <li><a>Submenu 1</a></li>
-              <li><a>Submenu 2</a></li>
-            </ul>
-          </details>
-        </li>
-        <li><a>Item 3</a></li>
+        <li><a href="/">首页</a></li>
+        <li><a href="http://124.71.239.49:5700/" target="_blank">文档</a></li>
+        <li><a>技术支持</a></li>
+        <li><a>联系我</a></li>
       </ul>
     </div>
     <div class="navbar-end">
