@@ -1,18 +1,21 @@
 <template>
-  <div class="">
+  <div>
     <div class="hero min-h-screen">
-      <div class="hero-content text-center">
-        <div class="max-w-xl gs_reveal">
-          <h1 class="text-5xl font-bold">嗨，你好！</h1>
+      <div class="hero-content ">
+        <div class="max-w-xl gs_reveal text-justify">
+          <h1 class="text-5xl text-center font-bold">嗨，你好！</h1>
           <p class="py-6">
-            这里是Li，一个会写一些后端的前端开发者，目前在成都，欢迎来到我的个人网站。
-            你可以在这里找到我的一些作品，以及一些技术分享。下面是我的一些信息。请向下滑动。
+            这里是Li，一个会写一些后端的前端开发者，目前在成都。
           </p>
+          <p class="py-2">作为一名热爱前端开发的工程师，我正在制作我的个人网站。通过这个网站，我希望展示我在Web开发领域的技能和经验。</p>
+          <p class="py-2">我对现代化的前端技术非常感兴趣，并且喜欢探索新的工具和框架。向下滑动，你会看到我使用了一些最流行的技术和框架，如Vue、Nest、Electron、Tailwind等。</p>
+          <p class="py-2">我注重代码质量和可维护性，喜欢使用最佳实践和设计模式来优化我的代码。同时，我也关注用户体验和界面设计，致力于提供友好且直观的用户界面。</p>
+          <p class="py-2">如果您对我的个人网站或者任何与前端开发相关的话题有兴趣，欢迎随时联系我或访问我的网站。非常感谢您阅读我的自我介绍，期待与您交流和分享前端开发的经验！</p>
         </div>
       </div>
     </div>
 
-    <div class="grid-container hidden sm:block">
+    <div class="grid-container">
       <div class="grid">
         <div class="gridLayer">
           <div class="gridBlock bg-[url('/assets/home/electron.png')]"></div>
@@ -46,10 +49,8 @@
         </div>
       </div>
     </div>
+
     <div class="cInnerContent">
-      <h1 class="header-section gs_reveal ipsType_center">
-        Scroll down and up to see different reveal animations
-      </h1>
 
       <div class="features">
         <div class="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
@@ -462,7 +463,10 @@ body {
   max-width: 1240px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 300px;
 }
+
+
 
 .ipsSpacer_bottom_double {
   margin-bottom: 30px;

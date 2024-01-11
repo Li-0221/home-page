@@ -3,13 +3,13 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
     head: {
-      title: "标题",
+      title: "Li",
       meta: [
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         {
           hid: "description",
           name: "description",
-          content: "网站描述"
+          content: "Li，李立，个人网站，简历，个人信息，前端，全栈，vue"
         }
       ],
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]

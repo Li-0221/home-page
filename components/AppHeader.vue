@@ -12,7 +12,7 @@
           <li><a href="/">首页</a></li>
           <li><a>文档</a></li>
           <li><a>技术支持</a></li>
-          <li><a>联系我</a></li>
+          <li><a href="/contact">联系我</a></li>
         </ul>
       </div>
       <a class="btn btn-ghost text-xl" href="/">Li</a>
@@ -22,7 +22,7 @@
         <li><a href="/">首页</a></li>
         <li><a href="http://124.71.239.49:5700/" target="_blank">文档</a></li>
         <li><a>技术支持</a></li>
-        <li><a>联系我</a></li>
+        <li><a href="/contact">联系我</a></li>
       </ul>
     </div>
     <div class="navbar-end">
